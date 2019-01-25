@@ -34,6 +34,7 @@ public class TestTrip {
         TimeUnit.SECONDS.sleep(5);
         
         tello.rotate(90);
+        tello.rotate(-180);
         TimeUnit.SECONDS.sleep(1);
         
         tello.land();

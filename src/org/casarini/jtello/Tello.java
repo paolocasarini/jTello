@@ -54,7 +54,11 @@ public class Tello {
     }
     
     public void rotate(int degrees) throws IOException {
-        sendCommand("cw " + degrees);
+        if (degrees > 0 && degrees <= 360) {
+            sendCommand("cw " + degrees);
+        } else if (degrees < 0 && degrees >= -360) {
+            sendCommand("ccw " + (-degrees));
+        }
     }
     
     public String sendCommand(String command) throws IOException {
@@ -74,3 +78,4 @@ public class Tello {
         return response;
     }
 }
+
