@@ -1,5 +1,4 @@
 .metadata
-bin/
 tmp/
 *.tmp
 *.bak
@@ -9,3 +8,9 @@ local.properties
 .settings/
 .loadpath
 .recommenders
+
+#Gradle
+.gradletasknamecache
+.gradle/
+build/
+bin/
