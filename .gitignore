@@ -9,6 +9,8 @@ local.properties
 .loadpath
 .recommenders
 
+.DS_Store
+
 #Gradle
 .gradletasknamecache
 .gradle/
