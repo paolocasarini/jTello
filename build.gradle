@@ -23,3 +23,5 @@ sourceSets {
 }
 
 mainClassName = 'org.casarini.jtello.TestTrip'
+version = '0.1.0'
+description = 'A Java SDK for Tello... just for fun!'
