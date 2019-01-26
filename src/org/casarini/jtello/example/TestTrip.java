@@ -16,9 +16,11 @@
  *  You should have received a copy of the GNU General Public License
  *  along with jTello.  If not, see <https://www.gnu.org/licenses/>.
  */
-package org.casarini.jtello;
+package org.casarini.jtello.example;
 
 import java.util.concurrent.TimeUnit;
+
+import org.casarini.jtello.Tello;
 
 public class TestTrip {
 
