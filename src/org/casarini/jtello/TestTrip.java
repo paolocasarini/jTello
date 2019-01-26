@@ -35,6 +35,12 @@ public class TestTrip {
         
         tello.rotate(90);
         tello.rotate(-180);
+        tello.up(20);
+        tello.down(20);
+        tello.right(20);
+        tello.left(20);
+        tello.forward(20);
+        tello.back(20);
         TimeUnit.SECONDS.sleep(1);
         
         tello.land();

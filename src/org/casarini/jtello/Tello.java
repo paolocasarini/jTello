@@ -53,11 +53,61 @@ public class Tello {
         sendCommand("land");
     }
     
+    public void up(int distance) throws IOException {
+    	if (distance >= 20 || distance <= 500) {
+    		sendCommand("up " + distance);
+    	} else {
+    		//TODO catch wrong input
+    	}
+    }
+    
+    public void down(int distance) throws IOException {
+    	if (distance >= 20 || distance <= 500) {
+    		sendCommand("down " + distance);
+    	} else {
+    		//TODO catch wrong input
+    	}
+    }
+    
+    public void left(int distance) throws IOException {
+    	if (distance >= 20 || distance <= 500) {
+    		sendCommand("left " + distance);
+    	} else {
+    		//TODO catch wrong input
+    	}
+    }
+ 
+    public void right(int distance) throws IOException {
+    	if (distance >= 20 || distance <= 500) {
+    		sendCommand("right " + distance);
+    	} else {
+    		//TODO catch wrong input
+    	}
+    }
+    
+    public void forward(int distance) throws IOException {
+    	if (distance >= 20 || distance <= 500) {
+    		sendCommand("forward " + distance);
+    	} else {
+    		//TODO catch wrong input
+    	}
+    }
+    
+    public void back(int distance) throws IOException {
+    	if (distance >= 20 || distance <= 500) {
+    		sendCommand("back " + distance);
+    	} else {
+    		//TODO catch wrong input
+    	}
+    }
+    
     public void rotate(int degrees) throws IOException {
         if (degrees > 0 && degrees <= 360) {
             sendCommand("cw " + degrees);
         } else if (degrees < 0 && degrees >= -360) {
             sendCommand("ccw " + (-degrees));
+        } else {
+        	//TODO catch wrong input
         }
     }
     
